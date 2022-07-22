@@ -16,7 +16,7 @@
     </filter>
   </defs>
   <g transform="matrix(1, 0, 0, 1, -893.174011, -493.249969)" bx:origin="0 0">
-    <path d="M920.78,649.85H893.174l47.641-156.6H965.6l47.571,156.6H985.238L953.187,531.4Z" style="fill: rgb(32, 64, 165);"/>
+    <path d="M920.78,649.85H893.174l47.641-156.6H965.6l47.571,156.6H985.238L953.187,531.4Z" style="fill: rgb(255, 255, 255);"/>
     <g>
       <path d="M 896.073 590.54 L 900.931 622.169 L 999.771 606.986 L 1007.227 589.653 L 994.913 575.357 L 896.073 590.54 Z" stroke="#f63c55" style="fill: rgb(255, 21, 80); paint-order: fill; stroke-width: 0px; filter: url(#drop-shadow-filter-0);" transform="matrix(0.999855, -0.017003, 0.017003, 0.999855, -10.043201, 16.267472)"/>
       <g transform="matrix(0.985681, -0.168618, 0.168618, 0.985681, 1003.463318, 677.869751)" fill="#fff" stroke="#fff" stroke-width="1">
