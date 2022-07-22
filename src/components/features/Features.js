@@ -13,10 +13,10 @@ export default function HomepageFeatures() {
       <Card title="Qualité maîtrisée" image="quality.png">
         Gestion collaborative intégrée
       </Card>
-      <Card title="Couverture fonctionnelle complète" image="exhaustivity.png">
+      <Card title="Fonctionnalités étendues" image="exhaustivity.png">
         Classification, NER, transcription & Segmentation d'image
       </Card>
-      <Card title="Sécurité & protection des données" image="security.png">
+      <Card title="Protection des données" image="security.png">
         Données sécurisées & RGPD compliant
       </Card>
       <Card title="Eco-friendly" image="ecofriendly.png">

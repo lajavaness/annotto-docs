@@ -49,7 +49,7 @@ const config = {
         title: 'Annotto',
         logo: {
           alt: 'Annotto Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {

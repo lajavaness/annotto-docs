@@ -6,8 +6,8 @@ const Card = ({ title, image, children }) => {
     <div className={styles.card}>
       {image && <img src={require(`@site/static/img/${image}`).default} alt={title} className={styles.image} />}
       <div className={styles.content}>
-        <div className={styles.title}>{title}</div>
-        <div className={styles.description}>{children}</div>
+        <h1 className={styles.title}>{title}</h1>
+        <p className={styles.description}>{children}</p>
       </div>
     </div>
   )

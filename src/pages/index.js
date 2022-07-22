@@ -2,9 +2,9 @@ import React from 'react'
 import clsx from 'clsx'
 import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import useBaseUrl from '@docusaurus/useBaseUrl'
 import Layout from '@theme/Layout'
 import Features from '@site/src/components/features/Features'
-
 import styles from './index.module.css'
 
 function HomepageHeader() {
@@ -12,7 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <img src="/img/logo.svg" alt="Annotto Logo" height={120} />
+        <img src={useBaseUrl('/img/logo.png')} alt="Annotto Logo" height={120} />
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>

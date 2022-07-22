@@ -29,6 +29,11 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 /* GitHub */
 .header-github-link:hover {
   opacity: 0.6;
