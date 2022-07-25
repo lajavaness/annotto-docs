@@ -1,27 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 120 156.6" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <defs>
-    <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="drop-shadow 1 1 2 2 0.4 rgba(0,0,0,0.4)">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
-      <feOffset dx="1" dy="2"/>
-      <feComponentTransfer result="offsetblur">
-        <feFuncA id="spread-ctrl" type="linear" slope="0.8"/>
-      </feComponentTransfer>
-      <feFlood flood-color="rgba(0,0,0,0.4)"/>
-      <feComposite in2="offsetblur" operator="in"/>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  <g transform="matrix(1, 0, 0, 1, -893.174011, -493.249969)" bx:origin="0 0">
-    <path d="M920.78,649.85H893.174l47.641-156.6H965.6l47.571,156.6H985.238L953.187,531.4Z" style="fill: rgb(255, 255, 255);"/>
-    <g>
-      <path d="M 896.073 590.54 L 900.931 622.169 L 999.771 606.986 L 1007.227 589.653 L 994.913 575.357 L 896.073 590.54 Z" stroke="#f63c55" style="fill: rgb(255, 21, 80); paint-order: fill; stroke-width: 0px; filter: url(#drop-shadow-filter-0);" transform="matrix(0.999855, -0.017003, 0.017003, 0.999855, -10.043201, 16.267472)"/>
-      <g transform="matrix(0.985681, -0.168618, 0.168618, 0.985681, 1003.463318, 677.869751)" fill="#fff" stroke="#fff" stroke-width="1">
-        <ellipse style="stroke: none;" cx="8.587" cy="-87.275" rx="2.5" ry="2.5"/>
-      </g>
-    </g>
-  </g>
+<svg width="120" height="157" viewBox="0 0 120 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2551_33292)">
+<path d="M27.606 156.6H0L47.641 0H72.426L119.997 156.6H92.064L60.013 38.15L27.606 156.6Z" fill="white"/>
+<g filter="url(#filter0_d_2551_33292)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.16269 129.778L2.76758 98.2359L101.335 81.3745L113.89 95.4591L106.73 112.916L8.16269 129.778ZM106.502 96.725C106.735 98.086 105.82 99.378 104.459 99.6108C103.098 99.8436 101.806 98.9291 101.574 97.5681C101.341 96.2072 102.255 94.9152 103.616 94.6824C104.977 94.4496 106.269 95.3641 106.502 96.725Z" fill="#FF1550"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_2551_33292" x="-1.23242" y="77.3745" width="119.123" height="56.4033" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.48 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2551_33292"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2551_33292" result="shape"/>
+</filter>
+<clipPath id="clip0_2551_33292">
+<rect width="120" height="156.6" fill="white"/>
+</clipPath>
+</defs>
 </svg>

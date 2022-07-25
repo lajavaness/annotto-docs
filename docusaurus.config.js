@@ -50,6 +50,7 @@ const config = {
         logo: {
           alt: 'Annotto Logo',
           src: 'img/logo.svg',
+          srcDark: 'img/logo_white.svg',
         },
         items: [
           {
@@ -86,7 +87,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       colorMode: {
-        disableSwitch: true,
+        disableSwitch: false,
       },
     }),
 }
