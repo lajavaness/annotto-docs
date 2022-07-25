@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Création de compte et assignation de rôles
 
+Ce document recense tout ce que vous devez savoir pour créer un compte et lui assigner un rôle.
+
 ## Création de compte
 
 Pour créer un compte, il est nécessaire de passer par keycloak. Ci-dessous, une description étape par étape pour la création de compte :

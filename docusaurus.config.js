@@ -9,7 +9,7 @@ const config = {
   title: 'Annotto',
   tagline: "Notre clé pour réussir une annotation simplifiée et accélérée à l'échelle",
   url: 'https://annotto-docs.lajavaness.com',
-  baseUrl: '/',
+  baseUrl: '/annotto-docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -49,7 +49,7 @@ const config = {
         title: 'Annotto',
         logo: {
           alt: 'Annotto Logo',
-          src: 'img/logo.png',
+          src: 'img/logo.svg',
         },
         items: [
           {

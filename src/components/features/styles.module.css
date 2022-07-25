@@ -2,22 +2,22 @@
   width: 100%;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-row: auto;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
   grid-gap: 2rem;
   grid-auto-rows: minmax(100px, auto);
   padding: 2rem 10%;
   flex: 1 0 auto;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 992px) {
   .features {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (min-width: 1400px) {
   .features {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
