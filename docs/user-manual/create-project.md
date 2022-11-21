@@ -6,6 +6,10 @@ sidebar_position: 3
 
 Ce document à pour objectif de fournir les informations nécessaires à la création d’un projet.
 
+:::note
+Vous trouverez un exemple de fichier de configuration pour chaque type de projet dans **_Types de projets et annotations_**
+:::
+
 ## Création de projet
 
 Vous pouvez créer un projet “from scratch” ou en important des fichiers de configuration. Pour voir un exemple de fichiers de configuration, je conseille d’aller exporter une configuration sur l’instance de staging qui contient tous les types de projets.
@@ -18,7 +22,7 @@ Afin de créer un projet vous devez importer des items à annotter qui sont soi 
 
 Vous pouvez inclure des données custom, qui ne sont que sauvées puis renvoyées lors de l’export. ces données doivent être ajoutées dans items.jsonlines, dans un objet “metadata” qui a un contenu libre.
 
-*metadata* est obligatoirement un objet (ou omis), donc il doit contenir des clés et valeurs à l’intérieur. Il ne peut pas être un nombre, une date, ou une chaîne de caractères.
+_metadata_ est obligatoirement un objet (ou omis), donc il doit contenir des clés et valeurs à l’intérieur. Il ne peut pas être un nombre, une date, ou une chaîne de caractères.
 
 ```json
 "metadata": "contenu" // not ok
@@ -31,7 +35,7 @@ Vous pouvez inclure des données custom, qui ne sont que sauvées puis renvoyée
 
 #### Mode texte
 
-*Le format des items attendu est le suivant.*
+_Le format des items attendu est le suivant._
 
 ```json
 {"datatype": "text","uuid": "e0870093-180d-46ac-9dd8-2e4b9661025d","data": {"text": "Mon texte"},"metadata": {"objet": "libre à votre usage"}},
@@ -39,7 +43,7 @@ Vous pouvez inclure des données custom, qui ne sont que sauvées puis renvoyée
 {"datatype": "text","uuid": "e0870093-180d-46ac-9dd8-2e4b9661025f","data": {"text": "Mon texte3"}}
 ```
 
-*ex : items.jsonlines*
+_ex : items.jsonlines_
 
 :::note
 “datatype” est un alias de “type”, les deux sont intervertibles (pour des raisons de rétrocompatibilité)
@@ -47,7 +51,7 @@ Vous pouvez inclure des données custom, qui ne sont que sauvées puis renvoyée
 
 #### Mode image
 
-*Le format des items attendu est le suivant.*
+_Le format des items attendu est le suivant._
 
 ```json
 {"uuid": "d7bb0128-c478-4f56-a00a-601ed6bd0801", "datatype": "image", "data": { "url": "s3://annoto-s3-storage/catDataset/cat.1.jpg"}},
@@ -56,7 +60,7 @@ Vous pouvez inclure des données custom, qui ne sont que sauvées puis renvoyée
 {"uuid": "d7bb0128-c478-4f56-a00a-601ee6bf0804", "datatype": "image", "data": { "url": "s3://annoto-s3-storage/catDataset/cat.4.jpg"}}
 ```
 
-*ex : images.jsonlines*
+_ex : images.jsonlines_
 
 :::note
 “datatype” est un alias de “type”, les deux sont intervertibles (pour des raisons de rétrocompatibilité)
@@ -74,12 +78,12 @@ Voir avec Phi pour créer les credentials spécifiques au besoins du projet Anno
 {
   "s3": {
     // aws access key qui donne (uniquement) l'accès au bucket S3 contenant les données
-    "accessKeyId": "AKIAV3IKDL2IEWUGCNIK", 
+    "accessKeyId": "AKIAV3IKDL2IEWUGCNIK",
     "secretAccessKey": "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" // aws secret
   }
 }
 ```
 
-*ex : config.json*
+_ex : config.json_
 
 Pour plus d’informations sur les signatures des différentes API annotto : predictions, upload, users, etc.. vous pouvez vous référer à la documentation Swagger : [Swagger UI](https://next.annotto-k8s.lajavaness.com/api-docs)

@@ -16,15 +16,15 @@ GET "{{url}}:{{port}}/api/projects/{{projectId}}/exports"
 
 Ci-dessous, la description étape par étape de la procédure d’export des données.
 
-Après vous être connectés : 
+Après vous être connectés :
 
 - Cliquez sur l’un de vos projets.
-- Cliquez sur les 3 petits points à droite de “ Start Annotation “ 
+- Cliquez sur les 3 petits points à droite de “ Start Annotation “
 
 ![Screenshot 4](./assets/screenshot-4.png)
 
 - Cliquez sur “ Export “
-- Selectionnez ce que vous souhaitez exporter : 
+- Selectionnez ce que vous souhaitez exporter :
 
 ![Screenshot 5](./assets/screenshot-5.png)
 

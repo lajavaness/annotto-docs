@@ -2,7 +2,6 @@
   "label": "Guide d'utilisation",
   "position": 3,
   "link": {
-    "type": "generated-index",
-    "description": "5 minutes pour comprendre comment utiliser Annotto"
+    "type": "generated-index"
   }
 }

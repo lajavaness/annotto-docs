@@ -16,7 +16,7 @@ Pour créer un compte, il est nécessaire de passer par keycloak. Ci-dessous, un
 
 3. Se logger avec les logins admin.
 
-On atterrit sur cette page : 
+On atterrit sur cette page :
 
 ![Screenshot 1](./assets/screenshot-1.png)
 
@@ -46,7 +46,7 @@ Après avoir crée utilisateur, il faut lui assigner un rôle. Voici le processu
 
 2. On clique sur “ Client Roles “ afin de retrouver les rôles que l’on peut assigner
 
-3. On choisit le client, par exemple ici on choisit “annotto” 
+3. On choisit le client, par exemple ici on choisit “annotto”
 
 ![Screenshot 3](./assets/screenshot-3.png)
 
@@ -54,6 +54,6 @@ Après avoir crée utilisateur, il faut lui assigner un rôle. Voici le processu
 
 5. Cliquer sur le rôle que vous souhaitez assigner et cliquer sur “ Add selected “
 
-:::info 
+:::info
 IMPORTANT : Il est possible d’attribuer plusieurs rôles. Si vous choisissez d’attribuer plusieurs rôles à l’utilisateur, il aura l’union des droits attribué à chaque rôles
 :::
