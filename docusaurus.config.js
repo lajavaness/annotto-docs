@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Annotto',
-  tagline: "Notre clé pour réussir une annotation simplifiée et accélérée à l'échelle",
+  tagline: 'Our key to a successfull, simplified, fast and up to scale annotation',
   url: 'https://annotto-docs.lajavaness.com',
   baseUrl: '/annotto-docs/',
   onBrokenLinks: 'warn',
@@ -16,8 +16,18 @@ const config = {
   organizationName: 'lajavaness',
   projectName: 'annotto-docs',
   i18n: {
-    defaultLocale: 'fr',
-    locales: ['fr'],
+    defaultLocale: 'en',
+    locales: ['en', 'fr'],
+    localeConfigs: {
+      fr: {
+        htmlLang: 'fr-FR',
+        label: 'Français',
+      },
+      en: {
+        htmlLang: 'en-GB',
+        label: 'English',
+      },
+    },
   },
   presets: [
     [
@@ -54,21 +64,25 @@ const config = {
         },
         items: [
           {
-            label: 'Pourquoi Annotto ?',
+            label: 'Why Annotto ?',
             type: 'doc',
             docId: 'about',
             position: 'right',
           },
           {
-            label: 'Installation',
+            label: 'Install',
             type: 'doc',
             docId: 'setup',
             position: 'right',
           },
           {
-            label: "Guide d'utilisation",
+            label: 'User guide',
             type: 'doc',
             docId: 'user-manual/create-account',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
           {

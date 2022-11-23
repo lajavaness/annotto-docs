@@ -2,27 +2,27 @@
 sidebar_position: 3
 ---
 
-# Création de projets
+# Creating projects
 
-Ce document à pour objectif de fournir les informations nécessaires à la création d’un projet.
+This document aims to provide the information needed to create a project.
+
+## Create a project
+
+You can create a project “from scratch” or by importing configuration files.
 
 :::note
-Vous trouverez un exemple de fichier de configuration pour chaque type de projet dans **_Types de projets et annotations_**
+You can find an example of a configuration file for each type of project in **_Project types and annotations_**
 :::
 
-## Création de projet
+### Uploading files:
 
-Vous pouvez créer un projet “from scratch” ou en important des fichiers de configuration. Pour voir un exemple de fichiers de configuration, je conseille d’aller exporter une configuration sur l’instance de staging qui contient tous les types de projets.
+In order to create a project you must import items to annotate which can be either in text or image format.
 
-### Upload des fichiers :
+#### Metadata (since 21/05/2021)
 
-Afin de créer un projet vous devez importer des items à annotter qui sont soi au format texte soit au format image.
+You can include custom data, which is only saved and returned during export. this data must be added in items.jsonlines, in a “metadata” object which has free content.
 
-#### Metadonnées (depuis 21/05/2021)
-
-Vous pouvez inclure des données custom, qui ne sont que sauvées puis renvoyées lors de l’export. ces données doivent être ajoutées dans items.jsonlines, dans un objet “metadata” qui a un contenu libre.
-
-_metadata_ est obligatoirement un objet (ou omis), donc il doit contenir des clés et valeurs à l’intérieur. Il ne peut pas être un nombre, une date, ou une chaîne de caractères.
+_metadata_ must be an object (or omitted), so it must contain keys and values ​​inside. It cannot be a number, date, or string.
 
 ```json
 "metadata": "contenu" // not ok
@@ -35,7 +35,7 @@ _metadata_ est obligatoirement un objet (ou omis), donc il doit contenir des cl�
 
 #### Mode texte
 
-_Le format des items attendu est le suivant._
+_The expected item format is as follows._
 
 ```json
 {"datatype": "text","uuid": "e0870093-180d-46ac-9dd8-2e4b9661025d","data": {"text": "Mon texte"},"metadata": {"objet": "libre à votre usage"}},
@@ -46,12 +46,12 @@ _Le format des items attendu est le suivant._
 _ex : items.jsonlines_
 
 :::note
-“datatype” est un alias de “type”, les deux sont intervertibles (pour des raisons de rétrocompatibilité)
+“datatype” is an alias of “type”, the two are interchangeable (for backward compatibility reasons)
 :::
 
-#### Mode image
+#### Image mode
 
-_Le format des items attendu est le suivant._
+_The expected item format is as follows._
 
 ```json
 {"uuid": "d7bb0128-c478-4f56-a00a-601ed6bd0801", "datatype": "image", "data": { "url": "s3://annoto-s3-storage/catDataset/cat.1.jpg"}},
@@ -63,7 +63,7 @@ _Le format des items attendu est le suivant._
 _ex : images.jsonlines_
 
 :::note
-“datatype” est un alias de “type”, les deux sont intervertibles (pour des raisons de rétrocompatibilité)
+“datatype” is an alias of “type”, the two are interchangeable (for backward compatibility reasons)
 :::
 
 Vos images doivent être hébergées ailleurs, sur S3 ou sur des URLs publiques.
@@ -74,16 +74,23 @@ Votre aws credential (ce que vous mettez dans votre ~/.aws/credentials) est stri
 Voir avec Phi pour créer les credentials spécifiques au besoins du projet Annotto en question.
 :::
 
+Your images must be hosted elsewhere, on S3 or on public URLs.
+In the case of protected S3 URLs, once the project has been created, you must add this additional configuration element.
+
+:::caution
+Your aws credential (what you put in your ~/.aws/credentials) is strictly confidential. Never share these credentials. Never use these credentials in Annotto.
+:::
+
 ```json
 {
   "s3": {
-    // aws access key qui donne (uniquement) l'accès au bucket S3 contenant les données
-    "accessKeyId": "AKIAV3IKDL2IEWUGCNIK",
-    "secretAccessKey": "8ko90CJZ18MD4JtFBbLG9+DAqR3Xt4Q1QB+U/4Ul" // aws secret
+    // aws access key which (only) gives access to the S3 bucket containing the data
+    "accessKeyId": "<YOUR SECRET ID>",
+    "secretAccessKey": "<YOUR SECRET ACCESS KEY>" // aws secret
   }
 }
 ```
 
 _ex : config.json_
 
-Pour plus d’informations sur les signatures des différentes API annotto : predictions, upload, users, etc.. vous pouvez vous référer à la documentation Swagger : [Swagger UI](https://next.annotto-k8s.lajavaness.com/api-docs)
+For more information on the signatures of the different annotto APIs: predictions, upload, users, etc. you can refer to the Swagger documentation : [Swagger UI](https://next.annotto-k8s.lajavaness.com/api-docs)

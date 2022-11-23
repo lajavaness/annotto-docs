@@ -1,8 +1,8 @@
-# Configuration projets images
+# Configurations of images projects
 
 ### Classification
 
-_exemple d'un fichier de config_
+_ex config.json_
 
 ```json
 {
@@ -24,7 +24,7 @@ _exemple d'un fichier de config_
 }
 ```
 
-_exemple d'un fichier d'items_
+_ex items.jsonlines_
 
 ```json
 {
@@ -43,7 +43,7 @@ _exemple d'un fichier d'items_
 
 ### Transcription
 
-_exemple d'un fichier de config_
+_ex config.json_
 
 ```json
 {
@@ -86,7 +86,7 @@ _exemple d'un fichier de config_
 }
 ```
 
-_exemple d'un fichier d'items_
+_ex items.jsonlines_
 
 ```json
 {
@@ -106,7 +106,7 @@ _exemple d'un fichier d'items_
 }
 ```
 
-_exemple d'un fichier d'annotation_
+_ex annotations.jsonlines_
 
 ```json
 {
@@ -148,7 +148,7 @@ _exemple d'un fichier d'annotation_
 
 ### Segmentation
 
-_exemple d'un fichier de config_
+_ex config.json_
 
 ```json
 {
@@ -308,7 +308,7 @@ _exemple d'un fichier de config_
 }
 ```
 
-_exemple d'un fichier d'items'_
+_ex d'items.jsonlines_
 
 ```json
 {
@@ -363,7 +363,7 @@ _exemple d'un fichier d'items'_
 }
 ```
 
-_exemple d'un fichier d'annotation_
+_ex annotations.jsonlines_
 
 ```json
 {

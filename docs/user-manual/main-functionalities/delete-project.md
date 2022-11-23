@@ -1,17 +1,17 @@
-# Supprimer un projet
+# Delete a project
 
-Depuis la page du projet :
+From the project page:
 
-1. Je clique sur **_options_**
+1. Click on **_options_**
 
-2. puis sur **_Delete Project_**
+2. Then **_Delete Project_**
 
 ![Screenshot 2-2](../assets/screenshot-2-2.png)
 
-Un modal s’ouvre me demandant confirmation de cette action
+A modal opens asking you to confirm this action
 
-Je clique sur **_Yes_**
+Click on **_Yes_**
 
 ![Screenshot 2-3](../assets/screenshot-2-3.png)
 
-Le projet est bien supprimé.
+The project is deleted.

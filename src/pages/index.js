@@ -14,21 +14,21 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <ThemedImage
-            alt="Annotto"
-            sources={{
-              light: useBaseUrl('/img/logo.svg'),
-              dark: useBaseUrl('/img/logo_white.svg'),
-            }}
-            height={120}
+          alt="Annotto"
+          sources={{
+            light: useBaseUrl('/img/logo.svg'),
+            dark: useBaseUrl('/img/logo_white.svg'),
+          }}
+          height={120}
         />
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link className="button button--outline button--primary button--lg" to="/docs/setup">
-            Installer Annotto
+            Install Annotto
           </Link>
           <Link className="button button--primary button--lg" to="/docs/user-manual/create-account">
-            Commencer avec Annotto
+            Start with Annotto
           </Link>
         </div>
       </div>

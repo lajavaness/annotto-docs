@@ -1,84 +1,84 @@
-# Création d'un projet type : Classification
+# Creation of a project: Classification
 
-Depuis le header, je clique sur **_Create new project_**.
+From the header, click on **_Create new project_**.
 
 ![Screenshot 1-1](../../../assets/screenshot-1-1.png)
 
-### 1/ Étape Project
+### 1/ Project tab
 
-On renseigne les champs obligatoires :
+Fill in the required fields:
 
-- **_Client_**
+- **_Customer_**
 - **_Project type_**
 - **_Project name_**
 - **_Project deadline_**
 - **_Project description_**
 
-Les champs non obligatoires :
+Non-mandatory fields:
 
-- **_Default markers_** : apparaît sur l’item plus tard
-- **_to delete_** : indique un item à supprimer
-- **_to check_** : indique un item à vérifier
-- **_to discuss_**: indique un item à discuter
+- **_Default markers_**: appears on the item later
+- **_to delete_**: indicates an item to delete
+- **_to check_**: indicates an item to check
+- **_to discuss_**: indicates an item to discuss
 
-On peut définir des niveaux d’accès à l’item importé à :
+You can define access levels for the imported item :
 
-- **_l’admin_**
-- **_le data scientist_**
-- **_l’utilisateur_**
+- **_the admin_**
+- **_the data scientist_**
+- **_the user_**
 
 ![Screenshot 1-2](../../../assets/screenshot-1-2.png)
 
-### 2/ Étape Files
+### 2/ Files tab
 
 ![Screenshot 1-3](../../../assets/screenshot-1-3.png)
 
-les champs :
+the fields :
 
-- **_Config file_**: fichier de config
-- **_Annotations file_**: fichier contenant les annotations liées à l’item
-- **_Predictions file_**: fichier contenant les predictions liées à l’item
+- **_Config file_**: config file
+- **_Annotations file_**: file containing the annotations linked to the item
+- **_Predictions file_**: file containing the predictions linked to the item
 
-Contrairement aux annotations, les prédictions viennent d’un modèle pré-entraîné. Après l’import, on pourra choisir de les garder ou non.
+Unlike annotations, predictions come from a pre-trained model. After the import, we can choose whether to keep them or not.
 
-Quant au champ obligatoire :
+As for the mandatory field:
 
-- **_item file_** : c’est une liste qu’il faut préparer à l’avance comprenant le type de l’item et une id unique
+- **_item file_**: this is a list that must be prepared in advance including the type of item and a unique id
 
-### 3/ Étape Labeling
+### 3/ Labeling tab
 
-On va définir ce qu’on veut faire avec notre projet.
+You can define what you want to do with the project.
 
-- **_Task Title_** : définit le nom
-- **_Task Type_** : définit le type
+- **_Task Title_**: defines the name
+- **_Task Type_**: defines the type
 
 ![Screenshot 1-4](../../../assets/screenshot-1-4.png)
 
-On peut ajouter un nouveau label en cliquant sur **_Add a new label_**.
+You can add a new label by clicking on **_Add a new label_**.
 
-Les champs :
+The fields :
 
-- **_Label Code_** : doit être unique
-- **_Label Name_** : ne doit pas forcement porter le même nom que Label Code
-- **_Color_** : définit la couleur du label
-- **_Hotkey_** : permet de créer un raccourci clavier
-- **_Label Description_** : une description du label
+- **_Label Code_**: must be unique
+- **_Label Name_**: does not necessarily have to have the same name as Label Code
+- **_Color_**: defines the color of the label
+- **_Hotkey_**: allows you to create a keyboard shortcut
+- **_Label Description_**: describes the label
 
 ![Screenshot 1-5](../../../assets/screenshot-1-5.png)
 
 :::caution
-Une fois ces labels définis, il n’est plus possible de les modifiers par la suite.
+Once these labels have been defined, it is no longer possible to modify them later.
 :::
 
-### 4/ Étape Annotation Guide
+### 4/ Annotation Guide tab
 
-On peut ici définir des règles d’annotations.
+Here you can define annotation rules.
 
-Une fois les spécifications d’un projet renseignées, on peut cliquer sur **_Add a new task_** pour commencer à renseigner les détails d'un autre projet.
+Once the specifications of a project have been filled in, you can click on **_Add a new task_** to start filling in the details of another project.
 
 ![Screenshot 1-6](../../../assets/screenshot-1-6.png)
 
-_exemple of a config file_
+_ex config.json_
 
 ```json
 

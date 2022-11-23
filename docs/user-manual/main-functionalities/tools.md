@@ -1,14 +1,14 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# Outils
+# Tools
 
-Depuis la page de l’item, il est possible depuis la barre d’outils **_Toolbox_** d’afficher les prédictions.
+From the item page, it is possible from the **_Toolbox_** toolbar to display the predictions.
 
-Cliquer sur **_Toolbox_**:
+Click on **_Toolbox_**:
 
-- **_Show predictions_** : permet d’avoir un aperçu des predictions
-- **_Prefill with predictions_** : remplis les predictions
+- **_Show predictions_**: allows to have an overview of the predictions
+- **_Prefill with predictions_**: fills in the predictions
 
 <video src={useBaseUrl('/video/screenrecord-2-1.mov')} controls width="100%"></video>
 
-Une prédiction remplis n’est prise en compte que si elle est enregistrée en cliquant sur **_Save & Next_**.
+A filled prediction is only taken into account if it is saved by clicking on **_Save & Next_**.

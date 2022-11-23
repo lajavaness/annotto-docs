@@ -1,3 +1,3 @@
-# Démo Vidéo
+# Demo Video
 
-## Bientôt disponible !
+## Coming soon !

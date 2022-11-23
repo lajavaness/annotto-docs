@@ -1,25 +1,23 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# Annotation d'un projet type : NER
+# Annotation of a project: NER
 
-En cliquant sur le projet **DEMO : NER**, vous avez la possibilité de classer l’item dans certaines catégories à travers deux modes de sélections.
+The **DEMO: NER** project allows you classify the item by specified categories through two selection modes.
 
-Le mode **_Word_** permet de sélectionner un mot ou bien une suite de mots.
+The **_Word_** mode allows you to select words.
 
-Dans l’exemple ci-dessous, on détermine le type de contrat.
+In the example below, the type of contract is determined.
 
 <video src={useBaseUrl('/video/screenrecord-1-1.mov')} controls width="100%"></video>
 
-Une fois l’annotation terminée, on sauvegarde en cliquant sur **_Save & Next_**.
+- Once the annotation is done, we save by clicking on **_Save & Next_**.
+- To delete an annotation, just click on the X at the top-right of the selection.
 
-Pour supprimer une annotation, il suffit de cliquer sur la croix qui encadre la sélection.
+The **_Character_** mode allows you to select a character or chain of characters.
 
-Le mode **_Character_** permet de sélectionner un caractère ou bien des caractères.
-
-Dans l’exemple ci-dessous, on détermine combien de temps dure le travail.
+In the example below, we determine how long the labor lasts.
 
 <video src={useBaseUrl('/video/screenrecord-1-2.mov')} controls width="100%"></video>
 
-Une fois l’annotation terminée, on sauvegarde en cliquant sur **_Save & Next_**.
-
-Pour supprimer une annotation, il suffit de cliquer sur la croix qui encadre la sélection.
+- Once the annotation is done, we save by clicking on **_Save & Next_**.
+- To delete an annotation, just click on the X at the top-right of the selection.

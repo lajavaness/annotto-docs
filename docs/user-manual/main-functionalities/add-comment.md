@@ -2,25 +2,25 @@
 sidebar_position: 4
 ---
 
-# Ajouter un commentaire
+# Add a comment
 
-Lorsqu’on annote un item, on peut ajouter un commentaire via le champ dédié qui se situe juste en dessous.
+When annotating an item, you can add a comment via the dedicated field just below.
 
-Il suffit :
+It is enough:
 
-1. d'écrire son commentaire
+1. write your comment
 
-2. appuyer sur entrer
+2. press enter
 
 ![Screenshot 1-9](../assets/screenshot-1-9.png)
 
-Il est aussi possible d’ajouter un commentaite depuis la page projet.
+- It is also possible to add a comment from the project page.
 
-Le nouveau commentaire ainsi que les anciens sont visible depuis l’espace **_History_**.
+- The new comment as well as the old ones are visible from the space **_History_**.
 
 ![Screenshot 2-1](../assets/screenshot-2-1.png)
 
-On peut filtrer l’historique des annotation par :
+You can filter the annotation history by:
 
 - **_Markers_**
 - **_Notes_**

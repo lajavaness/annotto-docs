@@ -1,19 +1,18 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# Annotation d'un projet type : Classification
+# Annotation of a project: Classification
 
-En cliquant sur le projet **DEMO : Image Classification**, vous avez la possibilité de classer l’item selon certaines catégories.
+The **DEMO: Image Classification** project allows you classify the item by specified categories.
 
-Dans l’exemple suivant, on parcours des images pour déterminer si ce sont des documents administratifs. Cette image ne représente pas un document administrative.
+In the following example, we browse images to determine whether they are administrative documents. This image does not represent an administrative document.
 
-- Je coche la case **_Autre_**.
+- I check the **_Other_** checkbox.
 
-- On peut aussi spécifier que l’image a été claire à annoter en cochant la case **_Oui_** dans la catégorie **_lisible_**.
+- You can also specify that the image was clear to annotate by checking the **_Yes_** checkbox in the **_readable_** category.
 
-- Enfin on précise que le sexe n’a pas pu être identifié en cochant la case **_Autre genre_**.
+- Finally, we specify that the gender could not be identified by checking the box **_Other gender_**.
 
 <video src={useBaseUrl('/video/screenrecord-1-4.mov')} controls width="100%"></video>
 
-- Une fois l’annotation terminée, on sauvegarde en cliquant sur **_Save & Next_**.
-
-- Pour supprimer une annotation, il suffit de décocher les cases sélectionnées.
+- Once the annotation is done, we save by clicking on **_Save & Next_**.
+- To delete an annotation, just click on the X at the top-right of the selection.

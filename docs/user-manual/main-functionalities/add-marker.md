@@ -1,13 +1,13 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# Ajouter un marqueur
+# Add marker
 
-Depuis la page d’annotation d’un item, il est possible d’ajouter un marqueur. Celui ci apparaît instantanément dans l’historique des actions et commentaire situé en dessous.
+From the annotation page of an item, it is possible to add a marker. This appears instantly in the history of actions and comments below.
 
-Il suffit de :
+Simply :
 
-1. Cliquer sur le champ marqueur dédié
+1. Click on the dedicated marker field
 
-2. Sélectionner une valeur de la liste déroulante proposée ou bien créer un nouveau marqueur
+2. Select a value from the drop-down list or create a new marker
 
 <video src={useBaseUrl('/video/screenrecord-1-9.mov')} controls width="100%"></video>

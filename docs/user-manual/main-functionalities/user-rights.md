@@ -1,33 +1,34 @@
----
+v---
 sidebar_position: 3
+
 ---
 
-# Droits des utilisateurs
+# User rights
 
-Les autorisations sont définies au niveau du **projet** et au niveau de la **plateforme**.
+Permissions are set at **project** and **platform** levels.
 
-- **Les autorisations au niveau de la plate-forme** définissent si un utilisateur peut créer un projet et à quels projets il voit / peut accéder. Ils sont définis par des objets de profil mappant un e-mail et un rôle, stockés dans la collection Profile DB. Lors d'un nouveau déploiement, cette collection contient déjà des graines pour les administrateurs et les e-mails dataScientist. Si un utilisateur demande une ressource fournissant une authentification via JWT et qu'il n'a pas de profil existant, un profil "utilisateur" est créé.
+- **Platform level permissions** define whether a user can create a project and which projects they can see/access. They are defined by profile objects mapping email and role, stored in the Profile DB collection. In a new deployment, this collection already contains seeds for administrators and dataScientist emails. If a user requests a resource providing authentication via JWT and does not have an existing profile, a "user" profile is created.
 
-- **Les autorisations au niveau du projet** sont définies par les champs de configuration facultatifs du projet : utilisateurs, dataScientists, administrateurs qui sont une liste d'e-mails.
+- **Project-level permissions** are defined by the project's optional configuration fields: users, dataScientists, administrators which are an email list.
 
-Les deux niveaux d'autorisations sont vérifiés par le middleware **_isAuthenticated_** à chaque demande
+- Both levels of authorizations are checked by the **_isAuthenticated_** middleware on each request.
 
-Les administrateurs peuvent mettre à jour les profils d'autres utilisateurs
+- Admins can update other users' profiles
 
-Les **rôles de plate-forme** et les **rôles de projet** ne doivent pas nécessairement correspondre (un simple utilisateur sur la plate-forme, peut être un projectDatascientist ou même un projectAdmin)
+- **Platform roles** and **project roles** do not have to correspond (a simple user on the platform, can be a projectDatascientist or even a projectAdmin)
 
-1. **Autorisations au niveau de la plateforme** :
+1. **Platform Level Permissions**:
 
-- **_admin_** : n'a aucune restriction, dépasse les autorisations du projet rôles : voit tous les projets et peut les administrer sans être inclus dans les groupes d'e-mails du projet (utilisateurs, dataScientists, admins)
+- **_admin_**: has no restrictions : sees all projects and can administer them without being included in project email groups (users, dataScientists, admins)
 
-- **_dataScientist_** : peut créer des projets, voit et peut accéder à des projets avec son e-mail est dans un groupe d'utilisateurs
+- **_dataScientist_**: can create projects, sees an accesses projects with his e-mail belonging to a group of users
 
-- **_utilisateur_** : ne peut pas créer de projets, voit et peut accéder aux projets avec son e-mail appartient à un groupe d'utilisateurs
+- **_user_**: cannot create projects, sees and accesses projects with his e-mail belonging to a group of users
 
-2. **Autorisations au niveau du projet** :
+2. **Project Level Permissions**:
 
-- **_projectAdmin_** : n'a aucune restriction sur l'administration du projet
+- **_projectAdmin_**: has no restriction on project administration
 
-- **_projectDatascientist_** : a certaines restrictions sur l'administration du projet (peut exporter/obtenir la configuration du projet, ne peut pas mettre la configuration ou archiver le projet)
+- **_projectDatascientist_**: has some restrictions on project administration (can export/get project config, can't upload config or archive project)
 
-- **_projectUser_** : n'a pas accès à l'administration du projet
+- **_projectUser_**: does not have access to the project administration

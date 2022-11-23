@@ -1,31 +1,29 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# Annotation d'un projet type : NER et Classification
+# Annotation of a project: NER and Classification
 
-En cliquant sur le projet **DEMO : NER and Classification**, vous avez la possibilité de classer l’item dans certaines catégories. À travers le NER qui comprend deux modes de sélections **_Word_** et **_Character_** et la Classification avec laquelle la sélection se fait à travers un checkbox.
+The **DEMO: NER and Classification** project allows you classify the item by specified categories. The **_NER_** mode includes two selection modes **_Word_** and **_Character_** and the **_Classification_** mode with which the selection is made through a checkbox.
 
-Le mode **_Word_** permet de sélectionner un mot ou bien une suite de mots.
+The **_Word_** mode allows you to select a word or a sequence of words.
 
-Dans l’exemple ci-dessous, on détermine la date le nom de l’organisation et l’adresse.
+In the example below, we determine the date, name and address of the organization.
 
 <video src={useBaseUrl('/video/screenrecord-1-7.mov')} controls width="100%"></video>
 
-Une fois l’annotation terminée, on sauvegarde en cliquant sur **_Save & Next_**.
+- Once the annotation is done, we save by clicking on **_Save & Next_**.
+- To delete an annotation, just click on the X at the top-right of the selection.
 
-Pour supprimer une annotation, il suffit de cliquer sur la croix qui encadre la sélection.
+The **_Character_** mode allows you to select a character or characters.
 
-Le mode **_Character_** permet de sélectionner un caractère ou bien des caractères.
-
-Dans l’exemple ci-dessous, on détermine le mois.
+In the example below, the month is determined.
 
 <video src={useBaseUrl('/video/screenrecord-1-8.mov')} controls width="100%"></video>
 
-Une fois l’annotation terminée, on sauvegarde en cliquant sur **_Save & Next_**.
+- Once the annotation is done, we save by clicking on **_Save & Next_**.
+- To delete an annotation, just click on the X at the top-right of the selection.
 
-Pour supprimer une annotation, il suffit de cliquer sur la croix qui encadre la sélection.
-
-En plus du NER, la Classification permet ici de déterminer la langue du document. Par exemple, sur l’enregistrement ci-dessous, l’utilisateur a estimer en lisant le message que la langue utilisée est le français.
+In addition to the NER, the Classification here makes it possible to determine the language of the document. For example, on the recording below, the user has estimated by reading the message that the language used is French.
 
 ![Screenshot 1-8](../../../assets/screenshot-1-8.png)
 
-Pour supprimer cette annotation, il suffit de décocher la case.
+- To remove this annotation, simply uncheck the box.

@@ -1,19 +1,18 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# Annotation d'un projet type : NER with relation
+# Annotation of a project: NER with relation
 
-En cliquant sur le projet **DEMO : NER with relation**, vous avez la possibilité de classer l’item dans certaines catégories en créant un lien entre ces catégories.
+The **DEMO: NER with relation** project allows you classify the item by specified categories by creating a link between these categories.
 
-Dans l’exemple ci-dessous, on détermine une relation entre une expérience et un skill.
+In the example below, we determine a relationship between an experience and a skill.
 
-1. On sélectionne premièrement l’experience puis la compétence depuis **_Sections_**.
+1. First select the experience then the skill from **_Sections_**.
 
-2. Ensuite on va sélectionner le type de relation sous la rubrique **_Relations_**.
+2. Then we will select the type of relationship under the heading **_Relations_**.
 
-3. Enfin, on clique sur les deux entités pour créer la relation.
+3. Finally, we click on the two entities to create the relationship.
 
 <video src={useBaseUrl('/video/screenrecord-1-3.mov')} controls width="100%"></video>
 
-Une fois l’annotation terminée, on sauvegarde en cliquant sur **_Save & Next_**.
-
-Pour supprimer une annotation, il suffit de cliquer sur la croix qui encadre la sélection.
+- Once the annotation is done, we save by clicking on **_Save & Next_**.
+- To delete an annotation, just click on the X at the top-right of the selection.

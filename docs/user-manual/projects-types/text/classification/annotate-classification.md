@@ -1,11 +1,11 @@
-# Annotation d'un projet type : Classification
+# Annotation of a project: Classification
 
-Le projet **Demo : Texte Classification** permet de classer l’item depuis certaines catégories.
+The **Demo: Text Classification** project allows you classify the item by specified categories.
 
-Dans cet exemple, l’utilisateur estime en lisant le message qu’un sentiment négatif était communiquer et qu’il traitait de **_Famille_**.
+In this example, the user believes by reading the message that a negative feeling was communicated and that it dealt with **_Family_**.
 
 ![Screenshot 1-7](../../../assets/screenshot-1-7.png)
 
-Pour classer un message selon les catégories, il suffit simplement de cliquer sur la case à côté de la catégorie voulu.
+To classify a message according by categories, simply click on the checkbox next to the relevant category.
 
-Pour supprimer une annotation, il suffit de décocher les cases sélectionnées.
+To remove an annotation, simply uncheck the selected boxe(s).

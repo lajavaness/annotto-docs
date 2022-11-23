@@ -1,8 +1,8 @@
-# Configuration projets texte
+# Configurations of a text project
 
 ### Classification
 
-_exemple d'un fichier de config_
+_ex config.json_
 
 ```json
 {
@@ -26,7 +26,7 @@ _exemple d'un fichier de config_
 
 ### NER
 
-_exemple d'un fichier de config_
+_ex config.json_
 
 ```json
 {
@@ -268,7 +268,7 @@ _exemple d'un fichier de config_
 }
 ```
 
-_exemple d'un fichier de items_
+_ex items.jsonlines_
 
 ```json
 {
@@ -290,7 +290,7 @@ _exemple d'un fichier de items_
 }
 ```
 
-_exemple d'un fichier de annotation_
+_ex annotations.jsonlines_
 
 ```json
 {
@@ -374,7 +374,7 @@ _exemple d'un fichier de annotation_
 
 ### NER with relation
 
-_exemple d'un fichier de config_
+_ex config.json_
 
 ```json
 {
@@ -429,7 +429,7 @@ _exemple d'un fichier de config_
 }
 ```
 
-_exemple d'un fichier de items_
+_ex items.jsonlines_
 
 ```json
 {

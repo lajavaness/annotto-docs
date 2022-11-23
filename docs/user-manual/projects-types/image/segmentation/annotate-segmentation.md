@@ -1,30 +1,30 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# Annotation d'un projet type : Segmentation
+# Annotation of a project: Segmentation
 
-Le projet **DEMO Segmentation**, permet d’annoter une image en localisant des zones.
+The **DEMO Segmentation** project makes it possible to annotate an image by delimiting areas.
 
-Dans cet exemple, on voudrait localiser sur l’image la partie du CV qui traite de l’expérience professionnel.
+In this example, we would like to locate on the image the part of the CV that deals with professional experience.
 
-- On sélectionne notre outil depuis la section **_Tool_**
+- We select our tool from the **_Tool_** section
 
-- On sélectionne également **_Experience_** depuis **_Sections_**
+- We also select **_Experience_** from **_Sections_**
 
-- On délimite la zone correspondante sur le CV
+- We delimit the corresponding area on the CV
 
-L’annotation se fait directement lorsqu’on relâche la souris.
+The annotation is done instantly once you release the mouse click.
 
 :::note
-choix de l’outil d’annotation dans l'ordre:
+choice of annotation tool in order of appearance:
 
-1. pour traite des zones clairement identifiable
+1. treats clearly identifiable areas
 
-2. pour traite des zones un peu moins uniformes
+2. treats less uniform areas
 
-3. permet d'avoir une délimitation des zones personnalisée
+3. personalizes selcetion relevant to the areas
 
 :::
 
 <video src={useBaseUrl('/video/screenrecord-1-5.mov')} controls width="100%"></video>
 
-Pour supprimer une annotation, il suffit de cliquer sur la croix qui encadre la sélection.
+- To delete an annotation, just click on the X at the top-right of the selection.
