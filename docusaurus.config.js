@@ -8,12 +8,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const config = {
   title: 'Annotto',
   tagline: 'Our key to a successfull, simplified, fast and up to scale annotation',
-  url: 'https://annotto-docs.lajavaness.com',
+  url: 'https://lajavaness.github.io',
   baseUrl: '/annotto-docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'lajavaness',
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
   projectName: 'annotto-docs',
   i18n: {
     defaultLocale: 'en',
