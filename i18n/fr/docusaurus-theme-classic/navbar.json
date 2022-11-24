@@ -5,14 +5,14 @@
   },
   "item.label.Why Annotto ?": {
     "message": "Pourquoi Annotto ?",
-    "description": "Navbar item with label Pourquoi Annotto ?"
+    "description": "Navbar item with label Why Annotto ?"
   },
   "item.label.Install": {
-    "message": "Installation",
-    "description": "Navbar item with label Installation"
+    "message": "Installer",
+    "description": "Navbar item with label Install"
   },
   "item.label.User guide": {
     "message": "Guide d'utilisation",
-    "description": "Navbar item with label Guide d'utilisation"
+    "description": "Navbar item with label User guide"
   }
 }

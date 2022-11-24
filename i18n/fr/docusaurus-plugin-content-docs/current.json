@@ -4,12 +4,12 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.User guide": {
-    "message": "Guide d'utilisation",
-    "description": "The label for category Guide d'utilisation in sidebar tutorialSidebar"
+    "message": "Guide d'utilisateurs",
+    "description": "The label for category User guide in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Types of projects and annotations": {
     "message": "Types de projets et annotations",
-    "description": "The label for category Types de projets et annotations in sidebar tutorialSidebar"
+    "description": "The label for category Types of projects and annotations in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.image": {
     "message": "image",
@@ -28,7 +28,7 @@
     "description": "The label for category transcription in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.text": {
-    "message": "texte",
+    "message": "text",
     "description": "The label for category text in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.ner": {
@@ -36,27 +36,31 @@
     "description": "The label for category ner in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.ner-with-relation": {
-    "message": "ner-with-relation",
+    "message": "ner-avec-relation",
     "description": "The label for category ner-with-relation in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Configurations examples": {
     "message": "Exemples de configurations",
-    "description": "The label for category Exemples de configurations in sidebar tutorialSidebar"
+    "description": "The label for category Configurations examples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Types of projects": {
     "message": "Types de projets",
-    "description": "The label for category Types de projets in sidebar tutorialSidebar"
+    "description": "The label for category Types of projects in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Main functions": {
     "message": "Fonctions générales",
-    "description": "The label for category Fonctions générales in sidebar tutorialSidebar"
+    "description": "The label for category Main functions in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Création projets mutliples": {
-    "message": "Création projets mutliples",
-    "description": "The label for category Création projets mutliples in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Create multiple projects": {
+    "message": "Création projets multiples",
+    "description": "The label for category Create multiple projects in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.NER et Classification": {
+  "sidebar.tutorialSidebar.category.NER and Classification": {
     "message": "NER et Classification",
-    "description": "The label for category NER et Classification in sidebar tutorialSidebar"
+    "description": "The label for category NER and Classification in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.ner with relation": {
+    "message": "ner avec relation",
+    "description": "The label for category ner with relation in sidebar tutorialSidebar"
   }
 }
