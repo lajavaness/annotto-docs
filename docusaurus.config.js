@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Annotto',
-  tagline: 'Our key to a successfull, simplified, fast and up to scale annotation',
+  tagline: 'Annotto is the only go to annotation tool to successfully annotate your documents at scale',
   url: 'https://lajavaness.github.io',
   baseUrl: '/annotto-docs/',
   onBrokenLinks: 'warn',
