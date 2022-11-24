@@ -2,58 +2,58 @@
 sidebar_position: 1
 ---
 
-# Création de compte et assignation de rôles
+# Account creation and roles assignment
 
-Ce document recense tout ce que vous devez savoir pour créer un compte et lui assigner un rôle.
+This document lists everything you need to know in order to create an account and assign it a role.
 
-## Création de compte
+## Account creation
 
-Pour créer un compte, il est nécessaire de passer par keycloak. Ci-dessous, une description étape par étape pour la création de compte :
+To create an account, it is necessary to go through keycloak. Below is a step-by-step description for account creation:
 
-1. Se rendre sur la console Keycloak en suivant l’url suivante : http://localhost:8080/auth
+1. Go to the Keycloak console by following this url: http://localhost:8080/auth
 
-2. Cliquer sur “ Administration Console “
+2. Click on “Administration Console”
 
-3. Se logger avec les logins admin.
+3. Log in as an admin.
 
-On atterrit sur cette page : 
+You will be redirected to this page:
 
 ![Screenshot 1](./assets/screenshot-1.png)
 
-4. Cliquer sur “ Users “ dans la barre latérale. En cliquant sur “ View all users “ vous avez accès à l’ensemble des users existant.
+4. Click on “Users” from the sidebar. By clicking on “View all users” you have access to all existing users.
 
-5. Cliquer sur “Add user” en haut à droite
+5. Click on “Add user” at the top right
 
-6. Renseigner dans les champs les informations de l’utilisateur que vous souhaitez créer
+6. Fill in the fields with the information of the user you want to create
 
-7. Cliquer sur “Save”
+7. Click on “Save”
 
-8. Aller ensuite sur l’onglet “Credentials” afin de lui donner un mot de passe temporaire ou non ( en fonction du toggle )
+8. Then go to the “Credentials” tab to give it a temporary password or not (depending on the toggle)
 
-9. Entrer le mot de passe que vous souhaitez lui attrivuer puis cliquer sur “Set Password”
+9. Enter the password you want to assign to it then click on “Set Password”
 
 :::note
-Votre utilisateur est ainsi crée mais à ce stade, il n’a pas de rôle.
+At this stage your user is created but has yet to be assigned a role.
 :::
 
-## Assignation de rôles
+## Role assignment
 
-Après avoir crée utilisateur, il faut lui assigner un rôle. Voici le processus à suivre
+Following the user's creation, here are the steps to assign a role:
 
-1. Se rendre sur l’onglet “RoleMapping” de la page “ Users “ dans keycloak
+1. Go to the “RoleMapping” tab of the “Users” page in keycloak
 
 ![Screenshot 2](./assets/screenshot-2.png)
 
-2. On clique sur “ Client Roles “ afin de retrouver les rôles que l’on peut assigner
+2. Click on “Client Roles” to find the roles that can be assigned
 
-3. On choisit le client, par exemple ici on choisit “annotto” 
+3. Choose the client, for example here we chose “annotto”
 
 ![Screenshot 3](./assets/screenshot-3.png)
 
-4. Les rôles disponible pour le client choisit s’affiche dans la partie “ Available roles “
+6. The roles available for the chosen client are displayed in the “Available roles” section
 
-5. Cliquer sur le rôle que vous souhaitez assigner et cliquer sur “ Add selected “
+7. Click on the role you want to assign and click on “Add selected”
 
-:::info 
-IMPORTANT : Il est possible d’attribuer plusieurs rôles. Si vous choisissez d’attribuer plusieurs rôles à l’utilisateur, il aura l’union des droits attribué à chaque rôles
+:::info
+IMPORTANT : It is possible to assign multiple roles. If you choose to assign several roles to the user, he will have the union of rights assigned to each role.
 :::

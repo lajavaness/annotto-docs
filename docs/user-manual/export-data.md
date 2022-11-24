@@ -2,32 +2,32 @@
 sidebar_position: 2
 ---
 
-# Export des données
+# Export data
 
-Ce document explique comment la procédure d’export des données via l’APi et via le front d’Annotto
+This document explains how to export data via the API and via the Annotto front
 
-## Via l'API :
+## Through the API :
 
 ```shell
 GET "{{url}}:{{port}}/api/projects/{{projectId}}/exports"
 ```
 
-## Via le front :
+## Through the front :
 
-Ci-dessous, la description étape par étape de la procédure d’export des données.
+Below is a step-by-step description of the procedure to export data.
 
-Après vous être connectés : 
+After logging in:
 
-- Cliquez sur l’un de vos projets.
-- Cliquez sur les 3 petits points à droite de “ Start Annotation “ 
+- Click on one of your projects.
+- Click on the 3 small dots to the right of “Start Annotation”
 
 ![Screenshot 4](./assets/screenshot-4.png)
 
-- Cliquez sur “ Export “
-- Selectionnez ce que vous souhaitez exporter : 
+- Click on “Export”
+- Select what you want to export:
 
 ![Screenshot 5](./assets/screenshot-5.png)
 
-Le fichier de configuration et/ou le fichier d’items. Avec ou sans commentaires et historiques
+The configurations file and/or the items file. With or without comments and history
 
-- Enfin, cliquez sur “Export File(s)”
+- Finally, click on “Export File(s)”

@@ -2,26 +2,26 @@
 sidebar_position: 2
 ---
 
-# Installation
+# Install
 
-Dans ce document, on explique le processus d’installation du projet Annotto après l’avoir cloné.
+This document explains how to set up Annotto after it has been cloned.
 
-## Telecharger le projet
+## Clone the project
 
-1. Télécharger annotto front :
+1. Clone annotto front :
 
 ```shell
 git clone git@github.com:lajavaness/annotto-front.git
 ```
 
-2. Télécharger annotto api :
+2. Clone annotto api :
 
 ```shell
 git clone git@github.com:lajavaness/annotto-api.git
 ```
 
-## Démarrer le projet
+## Launch the project
 
-3. Installer et démarrer annotto api en suivant les indications du README de cette page : [https://github.com/lajavaness/annotto-api](https://github.com/lajavaness/annotto-api)
+3. Install and run annotto api following the README instructions from this page : [https://github.com/lajavaness/annotto-api](https://github.com/lajavaness/annotto-api)
 
-4. Installer et démarrer annotto front en suivant les indications du ReadMe de cette page : [https://github.com/lajavaness/annotto-front](https://github.com/lajavaness/annotto-front)
+4. Install and run annotto front following the README instructions from this page : [https://github.com/lajavaness/annotto-front](https://github.com/lajavaness/annotto-front)

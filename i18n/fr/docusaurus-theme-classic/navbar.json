@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "Annotto",
+    "description": "The title in the navbar"
+  },
+  "item.label.Why Annotto ?": {
+    "message": "Pourquoi Annotto ?",
+    "description": "Navbar item with label Why Annotto ?"
+  },
+  "item.label.Install": {
+    "message": "Installer",
+    "description": "Navbar item with label Install"
+  },
+  "item.label.User guide": {
+    "message": "Guide d'utilisation",
+    "description": "Navbar item with label User guide"
+  }
+}

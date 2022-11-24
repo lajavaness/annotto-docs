@@ -2,27 +2,27 @@
 sidebar_position: 1
 ---
 
-# Pourquoi Annotto ?
+# Why Annotto ?
 
-La labellisation est une étape-clé de la construction puis de la maintenance d’une solution IA. Sa qualité est essentielle pour une IA performante. Elle nécessite de mobiliser des ressources qualifiées sur des tâches fastidieuses . Elle conduit souvent à sortir les données de l’organisation pour que cette tâche soit souvent (mal) sous-traitée.
+Labeling is a key step to building and maintaining an AI solution. Its quality is essential for a successful AI. It requires mobilizing qualified resources for tedious tasks. It often leads to taking the data out of the organization which is often (poorly) outsourced.
 
-## Description rapide
+## Quick Description
 
-Annotto répond à ces enjeux grâce à deux services à forte valeur ajoutée :
+Annotto meets these challenges with two high value-added services:
 
-1. Une démarche de sélection intelligente des données à labelliser :
+1. An intelligent selection process for the data to be labelled:
 
-Plusieurs méthodes IA et non-IA pour isoler les données les plus pertinentes à labelliser, afin d’atteindre une performance élevée avec le moins de labellisation possible et obtenir une IA non-biaisée en équilibrant les jeux de données.
+Several AI and non-AI methods to isolate the most relevant data to label, in order to achieve high performance with the least possible labeling and obtain an unbiased AI by balancing the datasets.
 
-2. La pré-labellisation automatique :
+2. Automatic pre-labelling:
 
-Plutôt que de labelliser « de zéro », le labellisateur valide ou modifie les éléments pré-positionnés par une IA.
+Rather than labeling “from scratch”, the labeler validates or modifies the pre-positioned elements by an AI.
 
-## Les + d'Annotto
+## The advantages of using Annotto
 
-Annotto est :
+Annotto is:
 
-- Fiable afin d’éviter les pertes d’annotations
-- Intuitif et efficace (raccourcis claviers)
-- Collaboratif (correction, commentaires, guide d'annotation…)
-- Et installable facilement on-premise pour éviter les fuites de données.
+- Reliable to avoid loss of annotations
+- Intuitive and efficient (keyboard shortcuts)
+- Collaborative (correction, comments, annotation guide…)
+- And easily installable on-premise to avoid data leaks.
