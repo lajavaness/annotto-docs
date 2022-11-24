@@ -86,7 +86,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/lajavaness',
+            href: 'https://github.com/lajavaness/annotto',
             position: 'right',
             className: 'header-github-link',
           },
