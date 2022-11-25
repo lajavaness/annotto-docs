@@ -2,6 +2,8 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+Last version of the documentation is accessible at this address https://lajavaness.github.io/annotto-docs/
+
 ### Installation
 #### * Requirements
 This project requires Node >= 16.14
