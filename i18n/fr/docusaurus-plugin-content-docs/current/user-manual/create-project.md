@@ -66,12 +66,10 @@ _ex : images.jsonlines_
 “datatype” est un alias de “type”, les deux sont intervertibles (pour des raisons de rétrocompatibilité)
 :::
 
-Vos images doivent être hébergées ailleurs, sur S3 ou sur des URLs publiques.
-Dans le cas d’URL S3 protégées, il faut une fois le projet crée “uploader” cet élément de configuration complémentaire.
+Vos images doivent être hébergées ailleurs, sur S3 ou sur des URLs publiques. Dans le cas d’URL S3 protégées, une fois le projet crée, il faut ajouter cet élément de configuration complémentaire.
 
 :::caution
-Votre aws credential (ce que vous mettez dans votre ~/.aws/credentials) est strictement personnel. Jamais partager ces credentials. Jamais utiliser ces credentials dans Annotto.
-Voir avec Phi pour créer les credentials spécifiques au besoins du projet Annotto en question.
+Vos aws credentials (ce que vous mettez dans votre ~/.aws/credentials) est strictement personnel. Jamais partager ces credentials. Jamais utiliser ces credentials dans Annotto.
 :::
 
 ```json
