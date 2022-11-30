@@ -35,10 +35,6 @@
     "message": "ner",
     "description": "The label for category ner in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.ner-with-relation": {
-    "message": "ner-avec-relation",
-    "description": "The label for category ner-with-relation in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.Configurations examples": {
     "message": "Exemples de configurations",
     "description": "The label for category Configurations examples in sidebar tutorialSidebar"
@@ -46,10 +42,6 @@
   "sidebar.tutorialSidebar.category.Types of projects": {
     "message": "Types de projets",
     "description": "The label for category Types of projects in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Main functions": {
-    "message": "Fonctions générales",
-    "description": "The label for category Main functions in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Create multiple projects": {
     "message": "Création projets multiples",
@@ -62,5 +54,9 @@
   "sidebar.tutorialSidebar.category.ner with relation": {
     "message": "ner avec relation",
     "description": "The label for category ner with relation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Main features": {
+    "message": "Main features",
+    "description": "The label for category Main features in sidebar tutorialSidebar"
   }
 }
