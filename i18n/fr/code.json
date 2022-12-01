@@ -262,5 +262,35 @@
   },
   "Our key to a successfull, simplified, fast and up to scale annotation": {
     "message": "Notre clé pour réussir une annotation simplifiée et accélérée à l'échelle"
+  },
+  "optimised UX & smart pre-annotation": {
+    "message": "UX optimisée & pré-annotation intelligente"
+  },
+  "Integrated collaborative management": {
+    "message": "Gestion collaborative intégrée"
+  },
+  "Classification, NER, Transcription & images Segmentation": {
+    "message": "Classification, NER, transcription & Segmentation d'image"
+  },
+  "Secure data & GDPR compliant": {
+    "message": "Données sécurisées & RGPD compliant"
+  },
+  "Optimized processing to reduce energy consumption": {
+    "message": "Traitements optimisés pour réduire la consommation d'énergie"
+  },
+  "Productivity +300%": {
+    "message": "Productivité +300%"
+  },
+  "Controlled quality": {
+    "message": "Qualité maîtrisée"
+  },
+  "Extended features": {
+    "message": "Fonctionnalités étendues"
+  },
+  "Data protection": {
+    "message": "Protection des données"
+  },
+  "Eco-friendly": {
+    "message": "Eco-friendly"
   }
 }
