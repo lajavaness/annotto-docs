@@ -16,10 +16,7 @@ Dans ce document, on explique le processus de démarrage d'Annotto.
 Vous devez avoir [Docker](https://www.docker.com/) installé.
 
 ```
-  docker run --rm -d --name annotto -p 3000:3000 -p 8080:8080 \
- -e KEYCLOAK_USER=admin \
- -e KEYCLOAK_PASSWORD=admin \
- ljnrepo/annotto:latest
+  docker run --rm -d --name annotto -p 3000:3000 ljnrepo/annotto:latest
 ```
 
 ---

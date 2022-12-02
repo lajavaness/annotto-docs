@@ -16,10 +16,7 @@ This document explains how to start Annotto.
 Make sure you have [Docker](https://www.docker.com/) installed.
 
 ```
-  docker run --rm -d --name annotto -p 3000:3000 -p 8080:8080 \
- -e KEYCLOAK_USER=admin \
- -e KEYCLOAK_PASSWORD=admin \
- ljnrepo/annotto:latest
+  docker run --rm -d --name annotto -p 3000:3000 ljnrepo/annotto:latest
 ```
 
 ---
