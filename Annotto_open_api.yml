@@ -1,0 +1,587 @@
+openapi: 3.0.0
+info:
+  title: Annotto (OS)
+  version: 1.0.0
+servers:
+  - url: http://{{annotto_host}}
+  - url: http://{{keycloak_host}}
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+    noauthAuth:
+      type: http
+      scheme: noauth
+    oauth2Auth:
+      type: http
+      scheme: oauth2
+security:
+  - oauth2Auth: []
+tags:
+  - name: Project
+  - name: Item
+  - name: User
+  - name: Clients
+paths:
+  /api/projects/import:
+    post:
+      tags:
+        - Project
+      summary: /projects/import
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                project:
+                  type: string
+                  format: binary
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/projects/{projectId}/exports:
+    get:
+      tags:
+        - Project
+      summary: /projects/:id/exports
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: allItems
+          in: query
+          schema:
+            type: boolean
+          example: 'true'
+        - name: config
+          in: query
+          schema:
+            type: boolean
+          example: 'true'
+        - name: annotationsAndComments
+          in: query
+          schema:
+            type: boolean
+          example: 'true'
+        - name: projectId
+          in: path
+          schema:
+            type: string
+          required: true
+          example: 63739ef30975ed580034db3e
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/projects/{projectId}:
+    get:
+      tags:
+        - Project
+      summary: /projects/:id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: projectId
+          in: path
+          schema:
+            type: string
+          required: true
+          example: 636cb142354d87001c7975b3
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    put:
+      tags:
+        - Project
+      summary: /projects/:id
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                name: test
+                client: LJN
+                type: text
+                deadline: '2023-05-13T07:20:26.228Z'
+                description: desc
+                defaultTags:
+                  - To delete
+                  - To check
+                  - To discuss
+                admins:
+                  - admin@test.com
+                tasks:
+                  - value: aa
+                    label: aa
+                    _id: 6294704b3b433e0ff8e3d5e2
+                    category: a
+                    type: classifications
+                    conditions: []
+                  - exposed: true
+                    color: '#bae637'
+                    value: ba
+                    label: ba
+                    category: b
+                    type: classifications
+                    conditions:
+                      - aa
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: projectId
+          in: path
+          schema:
+            type: string
+          required: true
+          example: 62946524a53205bc71d75979
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/projects:
+    get:
+      tags:
+        - Project
+      summary: /projects
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/projects/{id}/items:
+    get:
+      tags:
+        - Item
+      summary: /items
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+          example: 63739ef30975ed580034db3e
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/projects/{projectId}/items/{itemId}:
+    get:
+      tags:
+        - Item
+      summary: /items/:id
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: projectId
+          in: path
+          schema:
+            type: string
+          required: true
+          example: 63739ef30975ed580034db3e
+        - name: itemId
+          in: path
+          schema:
+            type: string
+          required: true
+          example: 63739ef30975ed3a9134db65
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    put:
+      tags:
+        - Item
+      summary: /items/:id
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                name: Updated item
+                tags:
+                  - tyler
+                  - durden
+                  - marla
+                  - singer
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: projectId
+          in: path
+          schema:
+            type: string
+          required: true
+        - name: itemId
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/projects/{projectId}/items/by-uuid/{uuid}:
+    get:
+      tags:
+        - Item
+      summary: /items/by-uuid/:uuid
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: projectId
+          in: path
+          schema:
+            type: string
+          required: true
+          example: 63739ef30975ed580034db3e
+        - name: uuid
+          in: path
+          schema:
+            type: string
+          required: true
+          example: '146_119_3'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/projects/{projectId}/items/{itemId}/annotations:
+    get:
+      tags:
+        - Item
+      summary: /items/:id/annotations
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: projectId
+          in: path
+          schema:
+            type: string
+          required: true
+        - name: itemId
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/projects/{projectId}/items/tags:
+    get:
+      tags:
+        - Item
+      summary: /items/:id/tags
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: projectId
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/projects/{projectId}/items/upload:
+    post:
+      tags:
+        - Item
+      summary: /items/upload
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: isUpdate
+          in: query
+          schema:
+            type: boolean
+          example: 'false'
+        - name: projectId
+          in: path
+          schema:
+            type: string
+          required: true
+          example: 63739ef30975ed580034db3e
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/projects/{projectId}/items/predictionsUpload:
+    post:
+      tags:
+        - Item
+      summary: /items/predictionsUpload
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: projectId
+          in: path
+          schema:
+            type: string
+          required: true
+          example: 63739ef30975ed580034db3e
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/projects/{prodjectId}/items/{itemId}/annotate:
+    post:
+      tags:
+        - Item
+      summary: /items/:id/annotate
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: string
+              example: >-
+                "{\"annotations\":[{\"value\":\"entity-name\",\"ner\":{\"start\":23,\"end\":33}},{\"value\":\"classif-name\",\"ner\":{\"start\":39,\"end\":46}}],\"entitiesRelations\":[]}"
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: Accept
+          in: header
+          schema:
+            type: string
+          example: application/json, text/plain, */*
+        - name: Accept-Language
+          in: header
+          schema:
+            type: string
+          example: en-US,en;q=0.9,fr;q=0.8
+        - name: Authorization
+          in: header
+          schema:
+            type: string
+          example: >-
+            Bearer
+            eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhdkdNQnNhY2ZTM1ZZa1FPdXJob3QtRFBlV0hMSUQyNXE4QWZ3ejJ6NlJVIn0.eyJleHAiOjE2Njg1MjIwNjYsImlhdCI6MTY2ODUyMTc2NiwiYXV0aF90aW1lIjoxNjY4NTIxNzY1LCJqdGkiOiI5NmM1OWJjYy04ZjZlLTRiNjMtYjlmMC02ZDM1MmNhODI4OTEiLCJpc3MiOiJodHRwczovL3Byb2QuYW5ub3R0by1rOHMubGFqYXZhbmVzcy5jb20vYXV0aC9yZWFsbXMvYW5ub3R0byIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYWNjb3VudCJdLCJzdWIiOiI1NzBkNTE2OS00NjNjLTQwY2QtOWQ0Mi04ZmVhOGYzYWFkNWQiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhbm5vdHRvIiwibm9uY2UiOiIxNmNkMDgzMC1hZTNkLTQ1ZjAtODQ1MS0yYjcyMmQ2YzFiNDEiLCJzZXNzaW9uX3N0YXRlIjoiYjg4NzUxNDMtMTI2NS00MmNhLTkxZTEtODhmZTg3MzQ1YmUwIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL3Byb2QuYW5ub3R0by1rOHMubGFqYXZhbmVzcy5jb20iXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1hbm5vdHRvIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhbm5vdHRvIjp7InJvbGVzIjpbImFkbWluIl19LCJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctdXNlcnMiLCJxdWVyeS1ncm91cHMiLCJxdWVyeS11c2VycyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsInNpZCI6ImI4ODc1MTQzLTEyNjUtNDJjYS05MWUxLTg4ZmU4NzM0NWJlMCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkFkbWluIFRlc3QiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsImdpdmVuX25hbWUiOiJBZG1pbiIsImZhbWlseV9uYW1lIjoiVGVzdCIsImVtYWlsIjoiYWRtaW5AdGVzdC5jb20ifQ.TkQ2vo26t4Ii0Vtk0dz_TxsITXBhce7rc1T3Em32U2fb3vJzedm8raz-JfGgcbKj0Ztjnn7scNryFWzQOGc1wk_emng0C6M6qw9_g8VodICl9glAOLc0dZQ-rh0-H8gVJfjDhojssFz2oRh2DhmmUiYXYaQWuXs0scrZqAsJ52rackmZMoWcFk33eu1qUNcuVO9deQm2kDpqtadgQmFNOc8eDJLQexDscN5bQ9AMHddBTpVNpyAMKIX825uIjUsioNA6KQ3ouj94ikRdjCWKd5rXkRNalY9B5emYEJvTKy-pRj15aJMmtNQa-gWfKuhyJTPgGZjJ4JTx-_VDZXjcJw
+        - name: Cache-Control
+          in: header
+          schema:
+            type: string
+          example: no-cache
+        - name: Connection
+          in: header
+          schema:
+            type: string
+          example: keep-alive
+        - name: Content-Type
+          in: header
+          schema:
+            type: string
+          example: application/json
+        - name: Cookie
+          in: header
+          schema:
+            type: string
+          example: >-
+            consent-policy=%7B%22ess%22%3A1%2C%22func%22%3A1%2C%22anl%22%3A1%2C%22adv%22%3A1%2C%22dt3%22%3A1%2C%22ts%22%3A27547900%7D;
+            _ga=GA1.2.391307883.1652874058
+        - name: Origin
+          in: header
+          schema:
+            type: string
+          example: https://prod.annotto-k8s.lajavaness.com
+        - name: Pragma
+          in: header
+          schema:
+            type: string
+          example: no-cache
+        - name: Referer
+          in: header
+          schema:
+            type: string
+          example: >-
+            https://prod.annotto-k8s.lajavaness.com/project/63739ef30975ed580034db3e/annotation/63739ef30975ed3a9134db65
+        - name: Sec-Fetch-Dest
+          in: header
+          schema:
+            type: string
+          example: empty
+        - name: Sec-Fetch-Mode
+          in: header
+          schema:
+            type: string
+          example: cors
+        - name: Sec-Fetch-Site
+          in: header
+          schema:
+            type: string
+          example: same-origin
+        - name: User-Agent
+          in: header
+          schema:
+            type: string
+          example: >-
+            Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+            (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+        - name: sec-ch-ua
+          in: header
+          schema:
+            type: string
+          example: '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"'
+        - name: sec-ch-ua-mobile
+          in: header
+          schema:
+            type: string
+          example: '?0'
+        - name: sec-ch-ua-platform
+          in: header
+          schema:
+            type: string
+          example: '"macOS"'
+        - name: prodjectId
+          in: path
+          schema:
+            type: string
+          required: true
+        - name: itemId
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users:
+    get:
+      tags:
+        - User
+      summary: /users
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/clients/{clientId}/projects:
+    get:
+      tags:
+        - Clients
+      summary: /clients/:clientId/projects
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: clientId
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/clients:
+    get:
+      tags:
+        - Clients
+      summary: /clients
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/me:
+    get:
+      tags:
+        - default
+      summary: /me
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/health:
+    get:
+      tags:
+        - default
+      summary: /health
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /auth/realms/annotto/protocol/openid-connect/token:
+    post:
+      tags:
+        - default
+      summary: Get Token
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  example: admin
+                password:
+                  type: string
+                  example: test
+                grant_type:
+                  type: string
+                  example: password
+                client_id:
+                  type: string
+                  example: '{{KEYCLOAK_CLIENT_ID}}'
+      security:
+        - noauthAuth: []
+      parameters:
+        - name: Content-Type
+          in: header
+          schema:
+            type: string
+          example: application/x-www-form-urlencoded
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
