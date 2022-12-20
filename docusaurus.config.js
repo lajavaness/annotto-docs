@@ -106,6 +106,15 @@ const config = {
 				disableSwitch: false,
 			},
 		}),
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+        language: ["en", "fr"]
+      }),
+    ],
+  ],
 }
 
 module.exports = config
