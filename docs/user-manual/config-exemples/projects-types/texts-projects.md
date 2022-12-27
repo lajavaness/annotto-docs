@@ -1,4 +1,4 @@
-# Configurations of a text project
+# Configuration of a text project
 
 ### Classification
 

@@ -2,9 +2,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Add marker
 
-From the annotation page of an item, it is possible to add a marker. This appears instantly in the history of actions and comments below.
+From the annotation page of an item, it is possible to add a marker. This appears instantly in the history.
 
-Simply :
+To add a marker:
 
 1. Click on the dedicated marker field
 

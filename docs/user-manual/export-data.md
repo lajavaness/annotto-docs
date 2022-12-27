@@ -28,6 +28,6 @@ After logging in:
 
 ![Screenshot 5](./assets/screenshot-5.png)
 
-The configurations file and/or the items file. With or without comments and history
+The configuration files and/or the items files. With or without comments and history
 
 - Finally, click on “Export File(s)”

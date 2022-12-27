@@ -1,4 +1,4 @@
-# Configurations of images projects
+# Configuration of an image project
 
 ### Classification
 
