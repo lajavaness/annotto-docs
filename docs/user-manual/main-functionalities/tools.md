@@ -1,6 +1,6 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# Tools
+# Show/Hide predictions
 
 From the item page, it is possible from the **_Toolbox_** toolbar to display the predictions.
 

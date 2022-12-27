@@ -2,9 +2,11 @@
 sidebar_position: 3
 ---
 
-# Filter
+# Filter items
 
-From the page of the selected project, click on **_Edit Filters_**.
+Filters are available for the items on a project.
+
+From a selected project page, click on **_Edit Filters_**.
 
 ![Screenshot 2-5](../assets/screenshot-2-5.png)
 
@@ -31,5 +33,5 @@ You can add more filters from the below dropdown.
 ![Screenshot 2-6](../assets/screenshot-2-6.png)
 
 :::info
-projects of image type, there is no **_Body_** filter
+For the projects of type **_image_**, there is no **_Body_** filter
 :::

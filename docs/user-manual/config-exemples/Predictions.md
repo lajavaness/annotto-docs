@@ -1,6 +1,6 @@
-# Prédictions
+# Predictions
 
-### Prédictions NER
+### NER prediction
 
 ```json
 {

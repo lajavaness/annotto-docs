@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# User rights
+# Set user permissions
 
 Permissions are set at **project** and **platform** levels.
 

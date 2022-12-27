@@ -4,19 +4,17 @@ sidebar_position: 4
 
 # Add a comment
 
-When annotating an item, you can add a comment via the dedicated field just below.
+When annotating an item, you can add a comment using the text box below the item text area.
 
-It is enough:
+To add a comment:
 
-1. write your comment
+1. Write your comment
 
-2. press enter
+2. Press enter
 
 ![Screenshot 1-9](../assets/screenshot-1-9.png)
 
-- It is also possible to add a comment from the project page.
-
-- The new comment as well as the old ones are visible from the space **_History_**.
+It is also possible to add a comment from the project page. The new comment as well as the old ones are visible from the space **_History_**.
 
 ![Screenshot 2-1](../assets/screenshot-2-1.png)
 
