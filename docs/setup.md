@@ -16,7 +16,7 @@ This document explains how to start Annotto.
 Make sure you have [Docker](https://www.docker.com/) installed.
 
 ```
-  docker run --rm -d --name annotto -p 3000:3000 ljnrepo/annotto:latest
+  docker run --rm -d --name annotto -p 3000:3000 -p 8080:8080 ljnrepo/annotto:latest
 ```
 
 ---
@@ -26,6 +26,13 @@ Make sure you have [Docker](https://www.docker.com/) installed.
 ```
 username (email): admin
 password: test
+```
+
+**Keycloak** will be available at [http://localhost:8080](http://localhost:8080) with default credentials
+
+```
+username: admin
+password: admin
 ```
 
 ## Start for local development
@@ -60,14 +67,14 @@ yarn start:dev
 ### Environment variables
 
 | Name                         | Default                                   | Optional-Required | Description                                                             |
-| ---------------------------- | ----------------------------------------- | ----------------- | ----------------------------------------------------------------------- |
+| ---------------------------- |-------------------------------------------| ----------------- | ----------------------------------------------------------------------- |
 | PORT                         | 5001                                      | optional          | Server listening port                                                   |
 | NODE_ENV                     | development                               | optional          | NODE Environment to use "[development, test]"                           |
 | ENCRYPTION_SECRET_KEY        | -                                         | optional          | A Secret Key used to encrypt AWS creds (symmetric)                      |
 | MONGO_URL                    | mongodb://localhost:27017/ljn_annotto_dev | optional          | Mongo connection string                                                 |
 | ANNOTTO_FRONT_URL            | http://localhost:3000                     | optional          | Annotto Front base url                                                  |
 | KEYCLOAK_REALM               | annotto                                   | optional          | Keycloak Realm (preconfigured if started with docker-compose\_)         |
-| KEYCLOAK_AUTH_URL            | http://localhost:8080/auth                | optional          | Keycloak auth url (preconfigured if started with docker-compose\_)      |
+| KEYCLOAK_AUTH_URL            | http://localhost:8080                     | optional          | Keycloak auth url (preconfigured if started with docker-compose\_)      |
 | KEYCLOAK_CLIENT_ID           | annotto                                   | optional          | Keycloak client id (preconfigured if started with docker-compose\_)     |
 | KEYCLOAK_CLIENT_SECRET       | a7b7a29d-abb0-4e21-abec-bca99a47e40e      | optional          | Keycloak client secret (preconfigured if started with docker-compose\_) |
 | ANNOTTO_UPLOAD_MAX_FILE_SIZE | 1048576000                                | optional          | Max file size permitted to upload (default = 1000 _ 1024 _ 1024)        |
