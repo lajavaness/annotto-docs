@@ -37,9 +37,9 @@ _metadata_ must be an object (or omitted), so it must contain keys and values �
 
 _The expected item format is as follows._
 
-```json
-{"datatype": "text","uuid": "e0870093-180d-46ac-9dd8-2e4b9661025d","data": {"text": "Mon texte"},"metadata": {"objet": "libre à votre usage"}},
-{"datatype": "text","uuid": "e0870093-180d-46ac-9dd8-2e4b9661025e","data": {"text": "Mon texte2"}},
+```json lines
+{"datatype": "text","uuid": "e0870093-180d-46ac-9dd8-2e4b9661025d","data": {"text": "Mon texte"},"metadata": {"objet": "libre à votre usage"}}
+{"datatype": "text","uuid": "e0870093-180d-46ac-9dd8-2e4b9661025e","data": {"text": "Mon texte2"}}
 {"datatype": "text","uuid": "e0870093-180d-46ac-9dd8-2e4b9661025f","data": {"text": "Mon texte3"}}
 ```
 
@@ -61,22 +61,22 @@ The images could be accessible from one of those three sources:
 ##### AWS S3
 
 When using AWS S3, different URL format is available. Here are all the accepted format.
-```json
-{"uuid": "e1c7b817-7f20-4fe5-9c87-99d2cd768402", "datatype": "image", "data": { "url": "https://s3-<region>.amazonaws.com/<bucket>/<key>"}},
-{"uuid": "d7bb0128-c478-4f56-a00a-601ed6bd0801", "datatype": "image", "data": { "url": "https://<bucket>.s3.<region>.amazonaws.com/<key>"}},
-{"uuid": "dc86e13b-9d53-468b-ba70-b19e241c4f03", "datatype": "image", "data": { "url": "https://<bucket>.s3-<region>.amazonaws.com/<key>"}},
+```json lines
+{"uuid": "e1c7b817-7f20-4fe5-9c87-99d2cd768402", "datatype": "image", "data": { "url": "https://s3-<region>.amazonaws.com/<bucket>/<key>"}}
+{"uuid": "d7bb0128-c478-4f56-a00a-601ed6bd0801", "datatype": "image", "data": { "url": "https://<bucket>.s3.<region>.amazonaws.com/<key>"}}
+{"uuid": "dc86e13b-9d53-468b-ba70-b19e241c4f03", "datatype": "image", "data": { "url": "https://<bucket>.s3-<region>.amazonaws.com/<key>"}}
 ```
 
 ##### Minio S3
 
-```json
-{"uuid": "e1c7b817-7f20-4fe5-9c87-99d2cd768402", "datatype": "image", "data": { "url": "https://<host>/<bucket>/<key>"}},
+```json lines
+{"uuid": "e1c7b817-7f20-4fe5-9c87-99d2cd768402", "datatype": "image", "data": { "url": "https://<host>/<bucket>/<key>"}}
 ```
 
 ##### Publicy Accessible 
 
-```json
-{"uuid": "e1c7b817-7f20-4fe5-9c87-99d2cd768402", "datatype": "image", "data": { "url": "https://example.com/this_is_a_public_image.jpeg"}},
+```json lines
+{"uuid": "e1c7b817-7f20-4fe5-9c87-99d2cd768402", "datatype": "image", "data": { "url": "https://example.com/this_is_a_public_image.jpeg"}}
 ```
 
 :::note
