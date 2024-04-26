@@ -41,7 +41,7 @@ password: admin
 
 1. Node 16+
 2. Mongo 4.4
-3. Keycloak 15.0.1
+3. Keycloak 22.0.2
 4. PostgreSQL 13+
 
 ### Launch the app
